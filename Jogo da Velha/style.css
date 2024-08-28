@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+.o{
+    position: relative; /*Para o absolute do after usar aqui como referência*/
+}
+
+.o:after{
+    position: absolute;
+    top:0; /*Qd bota todas essas medidas pra 0, ele centraliza*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "🛡️"; /*Tem que usar o after pq só no o n dá pra usar content*/
+    font-size: 50px;
+    line-height: 100px;
+}
+
+.x{
+    position: relative; 
+}
+
+.x:after{
+    position: absolute;
+    top:0; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "⚔️"; 
+    font-size: 50px;
+    line-height: 100px;
+}
